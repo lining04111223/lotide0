@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-module.exports = assertEqual;
+
 ////////////////////////////////
 const eqArrays = function(array1, array2) {
 
@@ -23,7 +23,7 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
-module.exports = eqArrays;
+
 
 //////////////////////////////
 const eqObjects = function(obj1, obj2) {
@@ -63,3 +63,6 @@ assertEqual(eqObjects(ab, abc), true); // => false
 const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
 assertEqual(eqObjects(cd, dc), true); // => true
+
+const cd2 = { c: "1", d: ["2", 3, 4] };
+assertEqual(eqObjects(cd, cd2), true);// => false
