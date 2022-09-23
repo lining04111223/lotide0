@@ -24,7 +24,6 @@ const eqArrays = function(array1, array2) {
 };
 
 
-
 //////////////////////////////
 const eqObjects = function(obj1, obj2) {
   
