@@ -33,12 +33,11 @@ const letterPositions = function(sentence) {
             results[char]= [i];
           }
         }
-      }
-  console.log(results);   
+      }  
   return results;
 };
 
-letterPositions("hello");
+console.log(letterPositions("hello"));
 
 /////test
 
