@@ -5,16 +5,8 @@ const input = [
 ];
 const result = input.map(({x, y}) => (Math.sqrt(x*x + y*y)));
 
-console.log(result);
-
 //////////////////assert//////////////////
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('../assertEqual');
 
 // TEST CODE
 assertEqual(result[0], 5);
